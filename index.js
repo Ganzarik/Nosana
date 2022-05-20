@@ -45,7 +45,7 @@ void Add(char *s)             //Добавляет запись в файл
          sn[i] = ' ';                         //Пробелы в sn[ ]
          strcpy(sn, Number);     //Копирование сроки Number в строку sn
          fwrite(sn, 1, MAX_NUMBER, F_tel);    //Запись в файл номера
-         if (ferror(F_tel))                   //Проверка наличия ошибки
+         if (ferror(F_tel))                   
          {
              fprintf(stderr, "\"%s\" : ошибка записи\n", File);
              exit(1);
